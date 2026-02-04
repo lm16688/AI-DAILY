@@ -1,11 +1,11 @@
 {
   "meta": {
-    "lastUpdated": "2026-02-04T14:53:51.290Z",
-    "total": 2,
+    "lastUpdated": "2026-02-04T15:14:37.441Z",
+    "total": 13,
     "isFallback": false,
     "sources": [
-      "机器之心",
-      "36氪"
+      "Hacker News",
+      "GitHub"
     ],
     "date": "2026-02-04"
   },
@@ -14,29 +14,155 @@
       "id": 1,
       "cat": "news",
       "hot": false,
-      "title": "智谱AI发布GLM-4新一代大模型，性能接近GPT-4",
-      "summary": "北京智谱华章科技发布GLM-4模型，支持128K上下文，多模态能力显著提升，已在多个评测中达到国际领先水平。",
-      "source": "机器之心",
+      "title": "Cannabis usage in older adults linked to larger brain, better cognitive function",
+      "summary": "Hacker News 热门讨论",
+      "source": "Hacker News",
       "date": "2026-02-04",
-      "url": "https://www.jiqizhixin.com",
-      "tags": [
-        "GPT-4",
-        "智谱AI"
-      ]
+      "url": "https://medicalxpress.com/news/2026-02-qa-cannabis-usage-middle-aged.html",
+      "tags": [],
+      "lang": "en"
     },
     {
       "id": 2,
-      "cat": "tools",
-      "hot": false,
-      "title": "百度文心一言用户突破1亿，开放API调用",
-      "summary": "百度宣布文心一言累计用户超过1亿，企业版API日均调用量超过10亿次，成为国内最广泛使用的AI大模型。",
-      "source": "36氪",
+      "cat": "news",
+      "hot": true,
+      "title": "Show HN: Ghidra MCP Server – 110 tools for AI-assisted reverse engineering",
+      "summary": "Hacker News 热门讨论",
+      "source": "Hacker News",
       "date": "2026-02-04",
-      "url": "https://36kr.com",
+      "url": "https://github.com/bethington/ghidra-mcp",
+      "tags": [],
+      "lang": "en"
+    },
+    {
+      "id": 3,
+      "cat": "news",
+      "hot": true,
+      "title": "X offices raided in France as UK opens fresh investigation into Grok",
+      "summary": "Hacker News 热门讨论",
+      "source": "Hacker News",
+      "date": "2026-02-04",
+      "url": "https://www.bbc.com/news/articles/ce3ex92557jo",
+      "tags": [],
+      "lang": "en"
+    },
+    {
+      "id": 4,
+      "cat": "tools",
+      "hot": true,
+      "title": "funNLP: 中英文敏感词、语言检测、中外手机/电话归属地/运营商查询、名字推断性别、手机号抽取、身份证抽取、邮箱抽取、中日文人名库、中文缩写库、拆字词典、词汇情感值、停用词、反动词表、暴恐词表、繁简体转换、英文模拟中文发音、汪峰歌词生成器、职业名称词库、同义词库、反义词库、否定词库、汽车品牌词库、汽车零件词库、连续英文切割、各种中文词向量、公司名字大全、",
+      "summary": "⭐ 78840 stars | Python | 中英文敏感词、语言检测、中外手机/电话归属地/运营商查询、名字推断性别、手机号抽取、身份证抽取、邮箱抽取、中日文人名库、中文缩写库、拆字词典、词汇情感值、停用词、反动词表、暴恐词表、繁简体转换、英文模拟中文发音、汪峰歌词生成器、职业名称词库、同义词库、反义词库、否定词库、汽车品牌词库、汽车零件词库、连续英文切",
+      "source": "GitHub",
+      "date": "2026-02-04",
+      "url": "https://github.com/fighting41love/funNLP",
       "tags": [
+        "Microsoft",
         "百度",
-        "文心一言"
-      ]
+        "开源",
+        "编程"
+      ],
+      "lang": "en"
+    },
+    {
+      "id": 5,
+      "cat": "research",
+      "title": "netron: Visualizer for neural network, deep learning and machine learning models",
+      "summary": "⭐ 32339 stars | JavaScript | Visualizer for neural network, deep learning and machine learning models",
+      "source": "GitHub",
+      "date": "2026-02-04",
+      "url": "https://github.com/lutzroeder/netron",
+      "tags": [],
+      "lang": "en"
+    },
+    {
+      "id": 6,
+      "cat": "news",
+      "title": "500-AI-Machine-learning-Deep-learning-Computer-vision-NLP-Projects-with-code: 500 AI Machine learning Deep learning Computer vision NLP Projects with code",
+      "summary": "⭐ 31351 stars | Unknown | 500 AI Machine learning Deep learning Computer vision NLP Projects with code",
+      "source": "GitHub",
+      "date": "2026-02-04",
+      "url": "https://github.com/ashishpatel26/500-AI-Machine-learning-Deep-learning-Computer-vision-NLP-Projects-with-code",
+      "tags": [
+        "编程"
+      ],
+      "lang": "en"
+    },
+    {
+      "id": 7,
+      "cat": "news",
+      "title": "onnx: Open standard for machine learning interoperability",
+      "summary": "⭐ 20279 stars | Python | Open standard for machine learning interoperability",
+      "source": "GitHub",
+      "date": "2026-02-04",
+      "url": "https://github.com/onnx/onnx",
+      "tags": [],
+      "lang": "en"
+    },
+    {
+      "id": 8,
+      "cat": "news",
+      "title": "ML-YouTube-Courses: 📺 Discover the latest machine learning / AI courses on YouTube.",
+      "summary": "⭐ 17094 stars | Unknown | 📺 Discover the latest machine learning / AI courses on YouTube.",
+      "source": "GitHub",
+      "date": "2026-02-04",
+      "url": "https://github.com/dair-ai/ML-YouTube-Courses",
+      "tags": [],
+      "lang": "en"
+    },
+    {
+      "id": 9,
+      "cat": "news",
+      "title": "ml-engineering: Machine Learning Engineering Open Book",
+      "summary": "⭐ 16573 stars | Python | Machine Learning Engineering Open Book",
+      "source": "GitHub",
+      "date": "2026-02-04",
+      "url": "https://github.com/stas00/ml-engineering",
+      "tags": [],
+      "lang": "en"
+    },
+    {
+      "id": 10,
+      "cat": "research",
+      "title": "Ai-Learn: 人工智能学习路线图，整理近200个实战案例与项目，免费提供配套教材，零基础入门，就业实战！包括：Python，数学，机器学习，数据分析，深���学习，计算机视觉，自然语言处理，PyTorch tensorflow machine-learning,deep-learning data-analysis data-mining mathem",
+      "summary": "⭐ 12599 stars | Unknown | 人工智能学习路线图，整理近200个实战案例与项目，免费提供配套教材，零基础入门，就业实战！包括：Python，数学，机器学习，数据分析，深���学习，计算机视觉，自然语言处理，PyTorch tensorflow machine-learning,deep-learning data-analysis da",
+      "source": "GitHub",
+      "date": "2026-02-04",
+      "url": "https://github.com/tangyudi/Ai-Learn",
+      "tags": [],
+      "lang": "en"
+    },
+    {
+      "id": 11,
+      "cat": "news",
+      "title": "cleanlab: Cleanlab's open-source library is the standard data-centric AI package for data quality and machine learning with messy, real-world data and labels.",
+      "summary": "⭐ 11296 stars | Python | Cleanlab's open-source library is the standard data-centric AI package for data quality and machine learning with messy, real-world data and labels.",
+      "source": "GitHub",
+      "date": "2026-02-04",
+      "url": "https://github.com/cleanlab/cleanlab",
+      "tags": [],
+      "lang": "en"
+    },
+    {
+      "id": 12,
+      "cat": "news",
+      "title": "mlcourse.ai: Open Machine Learning Course",
+      "summary": "⭐ 10433 stars | Python | Open Machine Learning Course",
+      "source": "GitHub",
+      "date": "2026-02-04",
+      "url": "https://github.com/Yorko/mlcourse.ai",
+      "tags": [],
+      "lang": "en"
+    },
+    {
+      "id": 13,
+      "cat": "news",
+      "title": "sktime: A unified framework for machine learning with time series",
+      "summary": "⭐ 9477 stars | Python | A unified framework for machine learning with time series",
+      "source": "GitHub",
+      "date": "2026-02-04",
+      "url": "https://github.com/sktime/sktime",
+      "tags": [],
+      "lang": "en"
     }
   ]
 }
