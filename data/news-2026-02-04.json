@@ -1,0 +1,42 @@
+{
+  "meta": {
+    "lastUpdated": "2026-02-04T14:42:31.802Z",
+    "total": 2,
+    "isFallback": false,
+    "sources": [
+      "机器之心",
+      "36氪"
+    ],
+    "date": "2026-02-04"
+  },
+  "news": [
+    {
+      "id": 1,
+      "cat": "news",
+      "hot": false,
+      "title": "智谱AI发布GLM-4新一代大模型，性能接近GPT-4",
+      "summary": "北京智谱华章科技发布GLM-4模型，支持128K上下文，多模态能力显著提升，已在多个评测中达到国际领先水平。",
+      "source": "机器之心",
+      "date": "2026-02-04",
+      "url": "https://www.jiqizhixin.com",
+      "tags": [
+        "GPT-4",
+        "智谱AI"
+      ]
+    },
+    {
+      "id": 2,
+      "cat": "tools",
+      "hot": false,
+      "title": "百度文心一言用户突破1亿，开放API调用",
+      "summary": "百度宣布文心一言累计用户超过1亿，企业版API日均调用量超过10亿次，成为国内最广泛使用的AI大模型。",
+      "source": "36氪",
+      "date": "2026-02-04",
+      "url": "https://36kr.com",
+      "tags": [
+        "百度",
+        "文心一言"
+      ]
+    }
+  ]
+}
