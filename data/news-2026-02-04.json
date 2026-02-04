@@ -1,7 +1,7 @@
 {
   "meta": {
-    "lastUpdated": "2026-02-04T15:14:37.441Z",
-    "total": 13,
+    "lastUpdated": "2026-02-04T15:31:58.487Z",
+    "total": 12,
     "isFallback": false,
     "sources": [
       "Hacker News",
@@ -13,18 +13,6 @@
     {
       "id": 1,
       "cat": "news",
-      "hot": false,
-      "title": "Cannabis usage in older adults linked to larger brain, better cognitive function",
-      "summary": "Hacker News 热门讨论",
-      "source": "Hacker News",
-      "date": "2026-02-04",
-      "url": "https://medicalxpress.com/news/2026-02-qa-cannabis-usage-middle-aged.html",
-      "tags": [],
-      "lang": "en"
-    },
-    {
-      "id": 2,
-      "cat": "news",
       "hot": true,
       "title": "Show HN: Ghidra MCP Server – 110 tools for AI-assisted reverse engineering",
       "summary": "Hacker News 热门讨论",
@@ -35,7 +23,7 @@
       "lang": "en"
     },
     {
-      "id": 3,
+      "id": 2,
       "cat": "news",
       "hot": true,
       "title": "X offices raided in France as UK opens fresh investigation into Grok",
@@ -47,7 +35,7 @@
       "lang": "en"
     },
     {
-      "id": 4,
+      "id": 3,
       "cat": "tools",
       "hot": true,
       "title": "funNLP: 中英文敏感词、语言检测、中外手机/电话归属地/运营商查询、名字推断性别、手机号抽取、身份证抽取、邮箱抽取、中日文人名库、中文缩写库、拆字词典、词汇情感值、停用词、反动词表、暴恐词表、繁简体转换、英文模拟中文发音、汪峰歌词生成器、职业名称词库、同义词库、反义词库、否定词库、汽车品牌词库、汽车零件词库、连续英文切割、各种中文词向量、公司名字大全、",
@@ -64,7 +52,7 @@
       "lang": "en"
     },
     {
-      "id": 5,
+      "id": 4,
       "cat": "research",
       "title": "netron: Visualizer for neural network, deep learning and machine learning models",
       "summary": "⭐ 32339 stars | JavaScript | Visualizer for neural network, deep learning and machine learning models",
@@ -75,7 +63,7 @@
       "lang": "en"
     },
     {
-      "id": 6,
+      "id": 5,
       "cat": "news",
       "title": "500-AI-Machine-learning-Deep-learning-Computer-vision-NLP-Projects-with-code: 500 AI Machine learning Deep learning Computer vision NLP Projects with code",
       "summary": "⭐ 31351 stars | Unknown | 500 AI Machine learning Deep learning Computer vision NLP Projects with code",
@@ -88,7 +76,7 @@
       "lang": "en"
     },
     {
-      "id": 7,
+      "id": 6,
       "cat": "news",
       "title": "onnx: Open standard for machine learning interoperability",
       "summary": "⭐ 20279 stars | Python | Open standard for machine learning interoperability",
@@ -99,7 +87,7 @@
       "lang": "en"
     },
     {
-      "id": 8,
+      "id": 7,
       "cat": "news",
       "title": "ML-YouTube-Courses: 📺 Discover the latest machine learning / AI courses on YouTube.",
       "summary": "⭐ 17094 stars | Unknown | 📺 Discover the latest machine learning / AI courses on YouTube.",
@@ -110,7 +98,7 @@
       "lang": "en"
     },
     {
-      "id": 9,
+      "id": 8,
       "cat": "news",
       "title": "ml-engineering: Machine Learning Engineering Open Book",
       "summary": "⭐ 16573 stars | Python | Machine Learning Engineering Open Book",
@@ -121,7 +109,7 @@
       "lang": "en"
     },
     {
-      "id": 10,
+      "id": 9,
       "cat": "research",
       "title": "Ai-Learn: 人工智能学习路线图，整理近200个实战案例与项目，免费提供配套教材，零基础入门，就业实战！包括：Python，数学，机器学习，数据分析，深���学习，计算机视觉，自然语言处理，PyTorch tensorflow machine-learning,deep-learning data-analysis data-mining mathem",
       "summary": "⭐ 12599 stars | Unknown | 人工智能学习路线图，整理近200个实战案例与项目，免费提供配套教材，零基础入门，就业实战！包括：Python，数学，机器学习，数据分析，深���学习，计算机视觉，自然语言处理，PyTorch tensorflow machine-learning,deep-learning data-analysis da",
@@ -132,7 +120,7 @@
       "lang": "en"
     },
     {
-      "id": 11,
+      "id": 10,
       "cat": "news",
       "title": "cleanlab: Cleanlab's open-source library is the standard data-centric AI package for data quality and machine learning with messy, real-world data and labels.",
       "summary": "⭐ 11296 stars | Python | Cleanlab's open-source library is the standard data-centric AI package for data quality and machine learning with messy, real-world data and labels.",
@@ -143,7 +131,7 @@
       "lang": "en"
     },
     {
-      "id": 12,
+      "id": 11,
       "cat": "news",
       "title": "mlcourse.ai: Open Machine Learning Course",
       "summary": "⭐ 10433 stars | Python | Open Machine Learning Course",
@@ -154,7 +142,7 @@
       "lang": "en"
     },
     {
-      "id": 13,
+      "id": 12,
       "cat": "news",
       "title": "sktime: A unified framework for machine learning with time series",
       "summary": "⭐ 9477 stars | Python | A unified framework for machine learning with time series",
