@@ -1,0 +1,61 @@
+name: Update AI Daily News
+
+on:
+  schedule:
+    # 每天 UTC 02:00 运行（北京时间 10:00）
+    - cron: '0 2 * * *'
+  workflow_dispatch:  # 手动触发
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '20'
+        
+    - name: Create data directory
+      run: mkdir -p data
+      
+    - name: Fetch news data
+      env:
+        NEWS_API_KEY: ${{ secrets.NEWS_API_KEY }}
+      run: node .github/scripts/update-news.js
+      
+    - name: Check if data changed
+      id: check_changes
+      run: |
+        if [ -f data/news.json ]; then
+          echo "changed=true" >> $GITHUB_OUTPUT
+          echo "count=$(cat data/news.json | grep -o '"total": [0-9]*' | head -1 | cut -d' ' -f2)" >> $GITHUB_OUTPUT
+        else
+          echo "changed=false" >> $GITHUB_OUTPUT
+        fi
+      
+    - name: Commit changes
+      if: steps.check_changes.outputs.changed == 'true'
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add data/
+        git commit -m "🤖 Auto-update: $(date +'%Y-%m-%d') [${{ steps.check_changes.outputs.count }} news]" || echo "No changes to commit"
+        
+    - name: Push changes
+      if: steps.check_changes.outputs.changed == 'true'
+      uses: ad-m/github-push-action@master
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        branch: ${{ github.ref }}
+        
+    - name: Deploy to GitHub Pages
+      if: steps.check_changes.outputs.changed == 'true'
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./
+        keep_files: true
