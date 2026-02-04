@@ -20,13 +20,12 @@
   --text:#dde0e8;
   --text-dim:#6b7a8f;
   --text-bright:#fff;
-  --accent:#7dd3fc;          /* cyan */
+  --accent:#7dd3fc;
   --accent-glow:rgba(125,211,252,.18);
   --accent-border:rgba(125,211,252,.28);
   --hot:#ff6b6b;
   --hot-bg:rgba(255,107,107,.1);
   --green:#4ade80;
-  /* category colours */
   --c-news:#7dd3fc;
   --c-tools:#86efac;
   --c-research:#c4b5fd;
@@ -70,7 +69,6 @@ header{
   display:flex;justify-content:space-between;align-items:center;
   flex-wrap:wrap;gap:18px;
 }
-/* logo */
 .logo{display:flex;align-items:center;gap:16px}
 .logo-diamond{
   font-size:32px;color:var(--accent);
@@ -85,13 +83,11 @@ header{
 }
 .logo-text p{font-size:11px;color:var(--text-dim);letter-spacing:.18em;margin-top:3px}
 
-/* stats row */
 .stats-row{display:flex;gap:24px}
 .stat{display:flex;flex-direction:column;align-items:center}
 .stat-val{font-size:21px;font-weight:700;color:var(--accent)}
 .stat-lbl{font-size:10px;color:var(--text-dim);letter-spacing:.06em;text-transform:uppercase}
 
-/* live badge */
 .live-badge{
   display:flex;align-items:center;gap:7px;
   background:var(--accent-glow);border:1px solid var(--accent-border);
@@ -110,12 +106,15 @@ header{
   position:relative;z-index:2;
   padding:18px 0 4px;display:flex;flex-direction:column;gap:14px;
 }
-/* search */
+.controls-header{
+  display:flex;justify-content:space-between;align-items:center;
+  gap:12px;flex-wrap:wrap;
+}
 .search-wrap{
   display:flex;align-items:center;gap:8px;
   background:rgba(255,255,255,.04);
   border:1px solid var(--border);border-radius:10px;
-  padding:0 15px;max-width:460px;width:100%;
+  padding:0 15px;flex:1;max-width:400px;
   transition:border-color .2s;
 }
 .search-wrap:focus-within{border-color:var(--accent-border)}
@@ -126,8 +125,19 @@ header{
 }
 .search-wrap input::placeholder{color:var(--text-dim)}
 
-/* category pills */
-.cat-row{display:flex;gap:8px;flex-wrap:wrap}
+.refresh-btn{
+  display:flex;align-items:center;gap:6px;
+  background:var(--bg-card);border:1px solid var(--border);
+  color:var(--text-dim);border-radius:8px;
+  padding:8px 14px;font-size:12px;font-weight:500;
+  transition:all .2s;white-space:nowrap;
+}
+.refresh-btn:hover{border-color:var(--accent-border);color:var(--accent)}
+.refresh-btn:active{transform:scale(0.96)}
+.refresh-btn.spinning svg{animation:spin 1s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+
+.cat-row{display:flex;gap:8px;flex-wrap:wrap;margin-top:8px}
 .cat-btn{
   display:flex;align-items:center;gap:6px;
   background:rgba(255,255,255,.04);border:1px solid var(--border);
@@ -180,7 +190,6 @@ header{
   padding:20px 18px 16px;
   position:relative;overflow:hidden;
   transition:border-color .25s,box-shadow .25s,transform .25s;
-  /* staggered fade-in */
   opacity:0;transform:translateY(18px);
 }
 .card.visible{
@@ -195,34 +204,26 @@ header{
   transform:translateY(-2px);
 }
 
-/* left colour stripe */
 .card::before{
   content:'';position:absolute;
   top:0;left:0;width:3px;height:100%;
-  /* set per category via inline style */
 }
-/* hot badge */
 .hot-badge{
   position:absolute;top:10px;right:10px;
   font-size:11px;font-weight:600;color:var(--hot);
   background:var(--hot-bg);border-radius:12px;padding:2px 8px;
   white-space:nowrap;
 }
-/* meta row */
 .card-meta{display:flex;justify-content:space-between;align-items:center;margin-bottom:7px}
 .card-cat{font-size:11px;font-weight:600;letter-spacing:.06em}
 .card-date{font-size:11px;color:var(--text-dim)}
-/* title */
 .card h3{font-size:15px;font-weight:600;color:#fff;line-height:1.35;margin-bottom:8px}
-/* summary */
 .card p{font-size:13px;color:var(--text-dim);line-height:1.55;margin-bottom:12px}
-/* tags */
 .card-tags{display:flex;gap:5px;flex-wrap:wrap;margin-bottom:14px}
 .card-tags span{
   font-size:11px;color:var(--text-dim);
   background:rgba(255,255,255,.06);border-radius:4px;padding:2px 8px;
 }
-/* footer */
 .card-foot{
   display:flex;justify-content:space-between;align-items:center;
   border-top:1px solid var(--border);padding-top:10px;
@@ -237,7 +238,6 @@ header{
 /* ─── SIDEBAR ───────────────────────────────────────────── */
 .sidebar{display:flex;flex-direction:column;gap:16px}
 
-/* shared side-card */
 .side-card{
   background:var(--bg-card);
   border:1px solid var(--border);border-radius:14px;padding:18px;
@@ -247,7 +247,6 @@ header{
   display:flex;align-items:center;gap:6px;margin-bottom:12px;
 }
 
-/* ── HOT LIST ── */
 .hot-list{display:flex;flex-direction:column;gap:2px}
 .hot-item{
   display:flex;align-items:flex-start;gap:10px;
@@ -262,7 +261,6 @@ header{
 }
 .hot-title{font-size:13px;color:#c8cdd8;line-height:1.4}
 
-/* ── XHS GENERATOR ── */
 .xhs-head{display:flex;justify-content:space-between;align-items:center}
 .xhs-toggle{
   font-size:12px;color:var(--accent);font-weight:500;
@@ -298,7 +296,6 @@ header{
 .copy-btn:active{transform:scale(.96)}
 .copy-btn.done{background:linear-gradient(135deg,#4ade80,#22c55e)}
 
-/* ── TAG CLOUD ── */
 .tag-cloud{display:flex;flex-wrap:wrap;gap:6px}
 .tag{
   font-size:12px;color:var(--accent);
@@ -307,6 +304,28 @@ header{
   transition:background .2s;
 }
 .tag:hover{background:rgba(125,211,252,.28)}
+
+/* ─── LOADING & ERROR STATES ────────────────────────────── */
+.loading-overlay{
+  position:fixed;inset:0;background:rgba(11,13,19,.95);
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  z-index:100;gap:20px;
+}
+.loading-spinner{
+  width:50px;height:50px;border:3px solid rgba(125,211,252,.1);
+  border-top-color:var(--accent);border-radius:50%;
+  animation:spin 1s linear infinite;
+}
+@keyframes spin{to{transform:rotate(360deg)}}
+.loading-text{color:var(--accent);font-size:14px;letter-spacing:.1em}
+.error-msg{
+  background:rgba(255,107,107,.1);border:1px solid var(--hot);
+  color:var(--hot);padding:12px 20px;border-radius:8px;
+  font-size:13px;margin-bottom:12px;display:none;
+}
+.error-msg.success{
+  background:rgba(74,222,128,.1);border-color:var(--green);color:var(--green);
+}
 
 /* ─── FOOTER ────────────────────────────────────────────── */
 footer{
@@ -324,6 +343,8 @@ footer p{font-size:11px;color:#4a5568}
 @media(max-width:900px){
   .main-layout{grid-template-columns:1fr}
   .sidebar{order:-1}
+  .controls-header{flex-direction:column;align-items:stretch}
+  .search-wrap{max-width:none}
 }
 @media(max-width:560px){
   .shell{padding:0 16px}
@@ -335,6 +356,12 @@ footer p{font-size:11px;color:#4a5568}
 </style>
 </head>
 <body>
+
+<!-- Loading Overlay -->
+<div class="loading-overlay" id="loadingOverlay">
+  <div class="loading-spinner"></div>
+  <div class="loading-text">正在获取今日 AI 资讯...</div>
+</div>
 
 <!-- ═══════════════ HEADER ═══════════════ -->
 <header>
@@ -349,13 +376,13 @@ footer p{font-size:11px;color:#4a5568}
   </div>
   <div style="display:flex;align-items:center;gap:22px;flex-wrap:wrap">
     <div class="stats-row">
-      <div class="stat"><span class="stat-val" id="statTotal">20</span><span class="stat-lbl">资讯数</span></div>
-      <div class="stat"><span class="stat-val" id="statTools">8</span><span class="stat-lbl">工具数</span></div>
-      <div class="stat"><span class="stat-val" id="statHot">9</span><span class="stat-lbl">热点数</span></div>
+      <div class="stat"><span class="stat-val" id="statTotal">--</span><span class="stat-lbl">资讯数</span></div>
+      <div class="stat"><span class="stat-val" id="statTools">--</span><span class="stat-lbl">工具数</span></div>
+      <div class="stat"><span class="stat-val" id="statHot">--</span><span class="stat-lbl">热点数</span></div>
     </div>
     <div class="live-badge">
       <span class="live-dot"></span>
-      <span id="liveTime">已更新 …</span>
+      <span id="liveTime">更新中...</span>
     </div>
   </div>
 </div>
@@ -365,13 +392,22 @@ footer p{font-size:11px;color:#4a5568}
 <!-- ═══════════════ CONTROLS ═══════════════ -->
 <div class="shell">
 <div class="controls">
-  <div class="search-wrap">
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
-    <input type="text" id="searchInput" placeholder="搜索资讯、工具、标签…" autocomplete="off">
+  <div class="error-msg" id="errorMsg">
+    <span id="errorText"></span>
   </div>
-  <div class="cat-row" id="catRow">
-    <!-- injected by JS -->
+  
+  <div class="controls-header">
+    <div class="search-wrap">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      <input type="text" id="searchInput" placeholder="搜索资讯、工具、标签…" autocomplete="off">
+    </div>
+    <button class="refresh-btn" id="refreshBtn" onclick="checkForUpdates()">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 4v6h-6M1 20v-6h6M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"/></svg>
+      检查更新
+    </button>
   </div>
+  
+  <div class="cat-row" id="catRow"></div>
 </div>
 </div>
 
@@ -383,11 +419,9 @@ footer p{font-size:11px;color:#4a5568}
   <section>
     <div class="section-head">
       <h2><span class="accent-dash">—</span> 今日汇总</h2>
-      <span class="item-count" id="itemCount">20 项</span>
+      <span class="item-count" id="itemCount">加载中...</span>
     </div>
-    <div class="cards-grid" id="cardsGrid">
-      <!-- injected by JS -->
-    </div>
+    <div class="cards-grid" id="cardsGrid"></div>
   </section>
 
   <!-- RIGHT: sidebar -->
@@ -426,12 +460,20 @@ footer p{font-size:11px;color:#4a5568}
 
 <!-- ═══════════════ FOOTER ═══════════════ -->
 <footer>
-<p>AI DAILY · 数据来源：TechCrunch / MIT Technology Review / IBM Think / Crescendo AI / DataNorth AI 等 · 每日自动更新 · 内容仅供参考</p>
+<p>AI DAILY · 数据来源：NewsAPI / TechCrunch / MIT Technology Review / 机器之心 / 36氪 · 每日自动更新 · 内容仅供参考</p>
 </footer>
 
 <!-- ═══════════════ DATA + LOGIC ═══════════════ -->
 <script>
-/* ─── DATA ───────────────────────────────────────────── */
+/* ─── CONFIGURATION ──────────────────────────────────── */
+const CONFIG = {
+  DATA_URL: './data/news.json',
+  CACHE_KEY: 'ai_daily_cache',
+  CACHE_TTL: 6 * 60 * 60 * 1000, // 6小时
+  REFRESH_INTERVAL: 30 * 60 * 1000, // 30分钟检查一次
+};
+
+/* ─── CATEGORY CONFIG ────────────────────────────────── */
 const CATS = [
   {id:'all',     label:'全部',     icon:'🌐'},
   {id:'news',    label:'行业动态', icon:'📰'},
@@ -449,158 +491,166 @@ const CAT_COLOR = {
   safety:'var(--c-safety)'
 };
 
-const NEWS = [
-  /* ── 行业动态 ── */
-  {id:1,cat:'news',hot:true,
-   title:'2026：AI 从炒作走向务实',
-   summary:'行业重心从大型语言模型转向实际部署。小模型、边缘智能和工作流集成成为焦点，智能体应用快速落地，行业正从暴力缩放转向新架构研究。',
-   source:'TechCrunch',date:'2026-02-03',
-   url:'https://techcrunch.com/2026/01/02/in-2026-ai-will-move-from-hype-to-pragmatism/',
-   tags:['智能体','行业趋势','务实化']},
-
-  {id:2,cat:'news',hot:true,
-   title:'MCP 成为智能体连接行业标准',
-   summary:'Anthropic 的 Model Context Protocol 已被 OpenAI、Microsoft、Google 相继采纳，现已捐献给 Linux Foundation 的 Agentic AI Foundation，成为 AI 智能体与外部工具对接的标准——类似于 AI 世界的"USB-C"。',
-   source:'TechCrunch',date:'2026-02-03',
-   url:'https://techcrunch.com/2026/01/02/in-2026-ai-will-move-from-hype-to-pragmatism/',
-   tags:['MCP','智能体','标准化']},
-
-  {id:3,cat:'news',hot:false,
-   title:'Google Project Genie：文字变可玩世界',
-   summary:'Google 推出 Project Genie，AI 世界模型能将文字提示转化为实时交互的数字世界，目前已向 AI Ultra 订阅用户开放。消息一出游戏股普遍下跌。',
-   source:'Google / Reuters',date:'2026-02-02',
-   url:'https://medium.com/last-week-in-ai/last-week-in-ai-february-2-2026-fe43afefc73b',
-   tags:['世界模型','Google','交互']},
-
-  {id:4,cat:'news',hot:true,
-   title:'OpenAI 将在 2 月 13 日退役 GPT-4o 系列',
-   summary:'OpenAI 宣布将在 2 月 13 日停用 GPT-4o、GPT-4.1、o4-mini 及相关变体，全面推送用户至 GPT-5.2，标志着模型迭代加速。',
-   source:'CNET / The Register',date:'2026-02-02',
-   url:'https://medium.com/last-week-in-ai/last-week-in-ai-february-2-2026-fe43afefc73b',
-   tags:['OpenAI','GPT-5.2','模型迭代']},
-
-  {id:5,cat:'news',hot:false,
-   title:'Apple 与 Google 签署 Siri × Gemini 多年合作协议',
-   summary:'苹果与谷歌宣布签署多年期合作协议，将用 Google Gemini 赋能下一代 Siri，预计今年内推出深度对话能力。',
-   source:'MacRumors / The Guardian',date:'2026-02-01',
-   url:'https://medium.com/last-week-in-ai/last-week-in-ai-february-2-2026-fe43afefc73b',
-   tags:['Apple','Siri','Gemini','合作']},
-
-  /* ── AI 工具 ── */
-  {id:6,cat:'tools',hot:true,
-   title:'ChatGPT 5.2：深度推理 + 自主执行',
-   summary:'GPT 5.2 整合了深度推理、长期记忆和自主任务执行能力，被专业人士视为"数字战略师"，支持内容创作、市场分析等复杂场景。OpenAI 将全面迁移用户至该版本。',
-   source:'DataNorth AI / Davydov',date:'2026-02-01',
-   url:'https://datanorth.ai/blog/top-10-ai-tools-for-2026',
-   tags:['ChatGPT','推理模型','自主执行']},
-
-  {id:7,cat:'tools',hot:false,
-   title:'Perplexity：取代搜索引擎的新范式',
-   summary:'Perplexity 凭借验证优先的架构和实时引用，已成为众多知识工作者的首选搜索替代品。新增 Finance 和 Shopping 专属模块，每句话均附带来源引用。',
-   source:'DataNorth AI',date:'2026-01-28',
-   url:'https://datanorth.ai/blog/top-10-ai-tools-for-2026',
-   tags:['搜索','Perplexity','知识工具']},
-
-  {id:8,cat:'tools',hot:true,
-   title:'AI 编码工具大爆发：Cursor / Lovable / Replit',
-   summary:'GitHub Copilot、Cursor、Lovable、Replit 正在彻底改变软件开发方式。微软和谷歌已有 25-30% 的代码由 AI 生成，"vibe coding"成为新潮流。',
-   source:'MIT Technology Review',date:'2026-01-12',
-   url:'https://www.technologyreview.com/2026/01/12/1130027/generative-coding-ai-software-2026-breakthrough-technology/',
-   tags:['编码助手','Cursor','开发工具']},
-
-  {id:9,cat:'tools',hot:false,
-   title:'n8n：低代码 AI 智能体编排平台',
-   summary:'n8n 已成为低代码自动化领域的领导者，支持将 LLM 与 Slack、HubSpot 等工具链接。其 AI Agent 节点能够自我修正工作流，实现端到端自动化。',
-   source:'DataNorth AI',date:'2026-01-20',
-   url:'https://datanorth.ai/blog/top-10-ai-tools-for-2026',
-   tags:['自动化','低代码','智能体']},
-
-  {id:10,cat:'tools',hot:false,
-   title:'ElevenLabs：语音合成的天花板',
-   summary:'ElevenLabs 的语音合成技术已达到可与专业配音演员媲美的水准，支持情感、语调的精确控制，企业端已大规模落地，质量领先业内同行。',
-   source:'Davydov Consulting',date:'2026-01-15',
-   url:'https://www.davydovconsulting.com/post/10-best-ai-tools-in-2026-a-complete-guide-for-business-creators-and-developers',
-   tags:['语音合成','ElevenLabs','音频']},
-
-  {id:11,cat:'tools',hot:false,
-   title:'HeyGen：企业级 AI 视频生成',
-   summary:'HeyGen 2025 版本支持 4K 渲染和实时交互式 AI 头像，视频翻译可自动为 175 种语言进行口型同步，正在引领企业内部培训和营销视频的变革。',
-   source:'DataNorth AI',date:'2026-01-18',
-   url:'https://datanorth.ai/blog/top-10-ai-tools-for-2026',
-   tags:['视频生成','HeyGen','企业']},
-
-  {id:12,cat:'tools',hot:false,
-   title:'Make.com / Zapier：自动化编排新王者',
-   summary:'Make.com 和 Zapier 均已深度集成 AI 步骤，可视化编辑器+数千个集成，自动化日度工作流（如每日 AI 新闻推送）仅需分钟级搭建。',
-   source:'AI Operator / Zapier',date:'2026-02-01',
-   url:'https://aioperator.com/blog/top-10-ai-tools-to-try-in-2026',
-   tags:['自动化','Make.com','Zapier']},
-
-  /* ── 研究前沿 ── */
-  {id:13,cat:'research',hot:true,
-   title:'世界模型：下一代 AI 的关键突破',
-   summary:'多家公司正在开发能够在 3D 空间中理解物理规律的 AI 世界模型。Fei-Fei Li 的 World Labs 推出商业世界模型 Marble，General Intuition 以 $1.34 亿种子轮入场，Yann LeCun 离开 Meta 创新公司专注此方向。',
-   source:'TechCrunch',date:'2026-02-02',
-   url:'https://techcrunch.com/2026/01/02/in-2026-ai-will-move-from-hype-to-pragmatism/',
-   tags:['世界模型','基础研究','3D']},
-
-  {id:14,cat:'research',hot:false,
-   title:'扩散模型进入文本与代码生成领域',
-   summary:'Inception Labs 发布了 Mercury 文本扩散模型，专注于代码生成，突破了扩散模型仅用于图像生成的局限，引发行业对新一代生成范式的广泛关注。',
-   source:'Understanding AI',date:'2026-01-10',
-   url:'https://www.understandingai.org/p/17-predictions-for-ai-in-2026',
-   tags:['扩散模型','代码生成','NLP']},
-
-  {id:15,cat:'research',hot:true,
-   title:'DeepMind AlphaGenome：解读人类 DNA',
-   summary:'Google DeepMind 推出 AlphaGenome，延续其生物学领域突破性成果，能够深度解读人类基因组序列，为精准医疗和药物研发带来新的科学工具。',
-   source:'Medium / Last Week in AI',date:'2026-02-02',
-   url:'https://medium.com/last-week-in-ai/last-week-in-ai-february-2-2026-fe43afefc73b',
-   tags:['AlphaGenome','基因组','生物AI']},
-
-  /* ── 商业应用 ── */
-  {id:16,cat:'industry',hot:true,
-   title:'数据中心支出将超 5000 亿美元',
-   summary:'顶级科技公司数据中心资本支出预计突破 5000 亿美元，但 Wall Street 也开始质疑需求曲线是否过于乐观——电力、冷却和土地瓶颈正成为关键制约因素。',
-   source:'Bloomberg / Motley Fool',date:'2026-02-02',
-   url:'https://techstartups.com/2026/02/02/top-tech-news-today-february-2-2026/',
-   tags:['投资','数据中心','基础设施']},
-
-  {id:17,cat:'industry',hot:false,
-   title:'Moonshot AI 发布万亿参数开源模型 Kimi K2.5',
-   summary:'中国初创公司 Moonshot 发布了拥有万亿参数的开源模型 Kimi K2.5，性能接近前沿水平，正在挑战美国顶级 AI 实验室的领先优势。',
-   source:'SiliconANGLE',date:'2026-02-01',
-   url:'https://medium.com/last-week-in-ai/last-week-in-ai-february-2-2026-fe43afefc73b',
-   tags:['开源模型','Moonshot','中国AI']},
-
-  /* ── 安全与伦理 ── */
-  {id:18,cat:'safety',hot:true,
-   title:'AI 生成内容与真相危机：信任正在崩塌',
-   summary:'美国 DHS 已使用 Google 和 Adobe 的 AI 视频生成工具创建公开内容。Content Authenticity Initiative 等标签机制在实际执行中存在严重漏洞——平台可选择不显示标签，甚至主动剥离。',
-   source:'MIT Technology Review',date:'2026-02-02',
-   url:'https://www.technologyreview.com/2026/02/02/1132068/what-weve-been-getting-wrong-about-ais-truth-crisis/',
-   tags:['深度伪造','真相危机','内容安全']},
-
-  {id:19,cat:'safety',hot:false,
-   title:'66% 的 CISO 将 AI 威胁列为首要风险',
-   summary:'最新调查显示，66% 的首席信息安全官将 AI 驱动的网络攻击列为 2026 年最大风险。同时，自托管开源 AI 模型未经安全配置暴露在互联网上的案例正在激增。',
-   source:'Hadrian / The Register',date:'2026-02-02',
-   url:'https://medium.com/last-week-in-ai/last-week-in-ai-february-2-2026-fe43afefc73b',
-   tags:['网络安全','CISO','AI 风险']},
-
-  {id:20,cat:'safety',hot:false,
-   title:'美国各州 AI 监管法案密集落地',
-   summary:'Texas Responsible AI Governance Act（TRAIGA）已于 2026 年 1 月 1 日生效；纽约州长签署 RAISE Act；EU Digital Omnibus 也正推进实施阶段，AI 治理从概念走向执行。',
-   source:'SIG / CNBC / MediaLaws',date:'2026-01-15',
-   url:'https://medium.com/last-week-in-ai/last-week-in-ai-february-2-2026-fe43afefc73b',
-   tags:['AI 治理','法规','美国','EU']},
-];
-
 /* ─── STATE ──────────────────────────────────────────── */
 let activeCat = 'all';
 let searchVal = '';
+let NEWS = [];
+let lastUpdateTime = null;
+let isFallback = false;
 
-/* ─── HELPERS ────────────────────────────────────────── */
+/* ─── CACHE MANAGEMENT ───────────────────────────────── */
+function getCache() {
+  try {
+    const cached = localStorage.getItem(CONFIG.CACHE_KEY);
+    if (!cached) return null;
+    const data = JSON.parse(cached);
+    if (Date.now() - data.timestamp > CONFIG.CACHE_TTL) {
+      localStorage.removeItem(CONFIG.CACHE_KEY);
+      return null;
+    }
+    return data;
+  } catch (e) {
+    return null;
+  }
+}
+
+function setCache(newsData, meta = {}) {
+  try {
+    localStorage.setItem(CONFIG.CACHE_KEY, JSON.stringify({
+      timestamp: Date.now(),
+      news: newsData,
+      meta: meta
+    }));
+  } catch (e) {
+    console.warn('Cache failed:', e);
+  }
+}
+
+/* ─── DATA FETCHING ──────────────────────────────────── */
+async function fetchFromAPI() {
+  try {
+    const response = await fetch(CONFIG.DATA_URL + '?t=' + Date.now());
+    if (!response.ok) throw new Error('Network error');
+    
+    const data = await response.json();
+    
+    if (data.news && Array.isArray(data.news)) {
+      lastUpdateTime = new Date(data.meta?.lastUpdated || Date.now());
+      isFallback = data.meta?.isFallback || false;
+      return data.news;
+    }
+    
+    if (Array.isArray(data)) return data;
+    throw new Error('Invalid format');
+    
+  } catch (error) {
+    // 开发环境使用模拟数据
+    if (location.hostname === 'localhost' || location.protocol === 'file:') {
+      console.log('Using mock data');
+      return generateMockData();
+    }
+    throw error;
+  }
+}
+
+function generateMockData() {
+  const today = new Date().toISOString().split('T')[0];
+  return [
+    {id:1,cat:'news',hot:true,title:'OpenAI 发布 GPT-5 预览版',summary:'新模型在数学推理和代码生成方面表现优异。',source:'TechCrunch',date:today,url:'#',tags:['OpenAI','GPT-5']},
+    {id:2,cat:'tools',hot:true,title:'Cursor Pro 版本发布',summary:'支持多文件同时编辑和自动代码审查。',source:'The Verge',date:today,url:'#',tags:['Cursor','编程']},
+    {id:3,cat:'research',hot:true,title:'DeepMind 蛋白质预测新突破',summary:'AlphaFold 3 能够预测 DNA、RNA 结构。',source:'MIT',date:today,url:'#',tags:['DeepMind','生物AI']},
+    {id:4,cat:'industry',hot:false,title:'Cerebras 获 5 亿美元融资',summary:'AI 芯片公司估值超 40 亿美元。',source:'Bloomberg',date:today,url:'#',tags:['融资','芯片']},
+    {id:5,cat:'safety',hot:true,title:'欧盟通过 AI 法案最终版',summary:'全球首部全面监管 AI 的法律。',source:'Reuters',date:today,url:'#',tags:['监管','欧盟']},
+  ];
+}
+
+async function fetchNewsData(force = false) {
+  if (!force) {
+    const cached = getCache();
+    if (cached?.news?.length > 0) {
+      NEWS = cached.news;
+      renderAll();
+      document.getElementById('loadingOverlay').style.display = 'none';
+      return;
+    }
+  }
+
+  try {
+    document.getElementById('loadingOverlay').style.display = 'flex';
+    hideError();
+    
+    const data = await fetchFromAPI();
+    NEWS = data;
+    
+    setCache(NEWS, { lastUpdated: new Date().toISOString() });
+    
+  } catch (error) {
+    console.error('Fetch error:', error);
+    showError('获取数据失败，请检查网络或稍后重试');
+    
+    // 使用过期缓存
+    const cached = getCache();
+    if (cached?.news) {
+      NEWS = cached.news;
+      showError('显示缓存数据，点击右上角刷新重试');
+    }
+  } finally {
+    document.getElementById('loadingOverlay').style.display = 'none';
+  }
+}
+
+/* ─── UI HELPERS ─────────────────────────────────────── */
+function showError(msg) {
+  const el = document.getElementById('errorMsg');
+  document.getElementById('errorText').textContent = msg;
+  el.style.display = 'block';
+  el.classList.remove('success');
+}
+
+function showSuccess(msg) {
+  const el = document.getElementById('errorMsg');
+  document.getElementById('errorText').textContent = msg;
+  el.style.display = 'block';
+  el.classList.add('success');
+  setTimeout(hideError, 3000);
+}
+
+function hideError() {
+  document.getElementById('errorMsg').style.display = 'none';
+}
+
+/* ─── CHECK UPDATES ──────────────────────────────────── */
+async function checkForUpdates() {
+  const btn = document.getElementById('refreshBtn');
+  btn.classList.add('spinning');
+  btn.disabled = true;
+  
+  try {
+    const response = await fetch(CONFIG.DATA_URL + '?t=' + Date.now());
+    const data = await response.json();
+    const newNews = data.news || [];
+    
+    // 简单比较：检查数量和第一条
+    const currentIds = NEWS.map(n => n.id).join(',');
+    const newIds = newNews.map(n => n.id).join(',');
+    
+    if (currentIds !== newIds && newNews.length > 0) {
+      NEWS = newNews;
+      setCache(NEWS, data.meta);
+      renderAll();
+      showSuccess('✅ 已更新到最新内容！');
+    } else {
+      showSuccess('ℹ️ 当前已是最新内容');
+    }
+  } catch (e) {
+    showError('检查更新失败，请稍后重试');
+  } finally {
+    btn.classList.remove('spinning');
+    btn.disabled = false;
+  }
+}
+
+/* ─── RENDER FUNCTIONS ───────────────────────────────── */
 function filtered(){
   return NEWS.filter(item => {
     const matchCat = activeCat === 'all' || item.cat === activeCat;
@@ -616,36 +666,33 @@ function filtered(){
 function catLabel(id){ return CATS.find(c=>c.id===id)?.label || id; }
 function catCount(id){ return id==='all' ? NEWS.length : NEWS.filter(i=>i.cat===id).length; }
 
-/* ─── XHS NOTE GENERATOR ─────────────────────────────── */
 function generateXHS(){
-  const today = new Date().toLocaleDateString('zh-CN',{year:'numeric',month:'2-digit',day:'2-digit'});
-  const hot   = NEWS.filter(i=>i.hot).slice(0,5);
+  const today = new Date().toLocaleDateString('zh-CN');
+  const hot = NEWS.filter(i=>i.hot).slice(0,5);
   const tools = NEWS.filter(i=>i.cat==='tools').slice(0,3);
-  const res   = NEWS.filter(i=>i.cat==='research').slice(0,2);
+  const res = NEWS.filter(i=>i.cat==='research').slice(0,2);
   const ranks = ['🥇','🥈','🥉','④','⑤'];
 
   let n = `🤖 AI日报 | ${today}\n`;
   n += `━━━━━━━━━━━━━━━━━━━━━━\n\n`;
   n += `✨ 今日必看 TOP热点\n\n`;
-  hot.forEach((item,i) => { n += `${ranks[i]} ${item.title}\n→ ${item.summary}\n\n`; });
+  hot.forEach((item,i) => { n += `${ranks[i]} ${item.title}\n→ ${item.summary.slice(0,60)}...\n\n`; });
 
   n += `━━━━━━━━━━━━━━━━━━━━━━\n`;
   n += `🛠️ 今日工具推荐\n\n`;
-  tools.forEach(item => { n += `💎 ${item.title}\n${item.summary}\n\n`; });
+  tools.forEach(item => { n += `💎 ${item.title}\n${item.summary.slice(0,50)}...\n\n`; });
 
   n += `━━━━━━━━━━━━━━━━━━━━━━\n`;
   n += `🔬 前沿研究一瞥\n\n`;
-  res.forEach(item => { n += `📌 ${item.title}\n${item.summary}\n\n`; });
+  res.forEach(item => { n += `📌 ${item.title}\n${item.summary.slice(0,50)}...\n\n`; });
 
   n += `━━━━━━━━━━━━━━━━━━━━━━\n`;
   n += `💡 今日 AI 金句\n`;
   n += `"2026 不是 AI 的终结，而是它从炒作走向务实的起点。"\n\n`;
-  n += `🔗 更多详情访问 AI Daily 汇总站\n`;
-  n += `#AI日报 #人工智能 #AI工具 #科技资讯 #小红书`;
+  n += `#AI日报 #人工智能 #AI工具 #科技资讯`;
   return n;
 }
 
-/* ─── RENDER ─────────────────────────────────────────── */
 function renderCatBar(){
   const el = document.getElementById('catRow');
   el.innerHTML = CATS.map(c => `
@@ -653,6 +700,7 @@ function renderCatBar(){
       <span>${c.icon}</span>${c.label}
       <span class="cnt">${catCount(c.id)}</span>
     </button>`).join('');
+  
   el.querySelectorAll('.cat-btn').forEach(btn => {
     btn.addEventListener('click', () => {
       activeCat = btn.dataset.cat;
@@ -666,8 +714,14 @@ function renderCards(){
   document.getElementById('itemCount').textContent = items.length + ' 项';
 
   const grid = document.getElementById('cardsGrid');
+  
+  if (items.length === 0) {
+    grid.innerHTML = '<div style="grid-column:1/-1;text-align:center;padding:60px;color:var(--text-dim)">暂无相关资讯</div>';
+    return;
+  }
+  
   grid.innerHTML = items.map((item,idx) => `
-    <article class="card" style="--stripe:${CAT_COLOR[item.cat]};animation-delay:${idx*80}ms" data-idx="${idx}">
+    <article class="card" data-idx="${idx}">
       <style>.card[data-idx="${idx}"]::before{background:${CAT_COLOR[item.cat]}}</style>
       ${item.hot ? '<span class="hot-badge">🔥 热点</span>' : ''}
       <div class="card-meta">
@@ -678,12 +732,11 @@ function renderCards(){
       <p>${item.summary}</p>
       <div class="card-tags">${item.tags.map(t=>`<span>${t}</span>`).join('')}</div>
       <div class="card-foot">
-        <span class="card-source">来源：${item.source}</span>
+        <span class="card-source">${item.source}</span>
         <a href="${item.url}" target="_blank" rel="noopener" class="read-link">查看原文 →</a>
       </div>
     </article>`).join('');
 
-  // stagger visibility
   requestAnimationFrame(() => {
     grid.querySelectorAll('.card').forEach((card,i) => {
       setTimeout(() => card.classList.add('visible'), i * 75);
@@ -693,17 +746,17 @@ function renderCards(){
 
 function renderHotList(){
   const hots = NEWS.filter(i=>i.hot).slice(0,6);
-  document.getElementById('hotList').innerHTML = hots.map((item,i) => `
-    <a href="${item.url}" target="_blank" rel="noopener" class="hot-item">
+  document.getElementById('hotList').innerHTML = hots.length ? hots.map((item,i) => `
+    <a href="${item.url}" target="_blank" class="hot-item">
       <span class="hot-rank">${i+1}</span>
       <span class="hot-title">${item.title}</span>
-    </a>`).join('');
+    </a>`).join('') : '<div style="color:var(--text-dim);padding:10px">暂无热点</div>';
 }
 
 function renderTagCloud(){
   const tags = [...new Set(NEWS.flatMap(i=>i.tags))];
   const el = document.getElementById('tagCloud');
-  el.innerHTML = tags.map(t => `<span class="tag" data-tag="${t}">#${t}</span>`).join('');
+  el.innerHTML = tags.length ? tags.map(t => `<span class="tag" data-tag="${t}">#${t}</span>`).join('') : '<span style="color:var(--text-dim);font-size:12px">暂无标签</span>';
   el.querySelectorAll('.tag').forEach(span => {
     span.addEventListener('click', () => {
       searchVal = span.dataset.tag;
@@ -718,9 +771,9 @@ function renderXHS(){
 }
 
 function renderStats(){
-  document.getElementById('statTotal').textContent = NEWS.length;
-  document.getElementById('statTools').textContent = NEWS.filter(i=>i.cat==='tools').length;
-  document.getElementById('statHot').textContent  = NEWS.filter(i=>i.hot).length;
+  document.getElementById('statTotal').textContent = NEWS.length || '--';
+  document.getElementById('statTools').textContent = NEWS.filter(i=>i.cat==='tools').length || '--';
+  document.getElementById('statHot').textContent = NEWS.filter(i=>i.hot).length || '--';
 }
 
 function renderAll(){
@@ -730,34 +783,39 @@ function renderAll(){
   renderTagCloud();
   renderXHS();
   renderStats();
+  updateTime();
 }
 
-/* ─── LIVE TIME ──────────────────────────────────────── */
 function updateTime(){
   const now = new Date();
   const m = String(now.getMonth()+1).padStart(2,'0');
   const d = String(now.getDate()).padStart(2,'0');
   const h = String(now.getHours()).padStart(2,'0');
   const mi = String(now.getMinutes()).padStart(2,'0');
-  document.getElementById('liveTime').textContent = `已更新 ${m}月${d}日 ${h}:${mi}`;
+  
+  let timeStr = `${m}月${d}日 ${h}:${mi}`;
+  if (lastUpdateTime) {
+    const diff = Math.floor((now - lastUpdateTime) / 60000);
+    if (diff < 1) timeStr += ' (刚刚)';
+    else if (diff < 60) timeStr += ` (${diff}分钟前)`;
+    if (isFallback) timeStr += ' [备用]';
+  }
+  
+  document.getElementById('liveTime').textContent = `已更新 ${timeStr}`;
 }
-updateTime();
-setInterval(updateTime, 30000);
 
-/* ─── SEARCH LISTENER ────────────────────────────────── */
+/* ─── EVENT LISTENERS ────────────────────────────────── */
 document.getElementById('searchInput').addEventListener('input', e => {
   searchVal = e.target.value;
   renderAll();
 });
 
-/* ─── XHS TOGGLE ─────────────────────────────────────── */
 document.getElementById('xhsToggle').addEventListener('click', function(){
   const body = document.getElementById('xhsBody');
   const open = body.classList.toggle('open');
   this.textContent = open ? '收起' : '展开';
 });
 
-/* ─── COPY BTN ───────────────────────────────────────── */
 document.getElementById('copyBtn').addEventListener('click', function(){
   const text = document.getElementById('xhsPre').textContent;
   navigator.clipboard.writeText(text).then(() => {
@@ -770,8 +828,21 @@ document.getElementById('copyBtn').addEventListener('click', function(){
   });
 });
 
-/* ─── INIT ───────────────────────────────────────────── */
-renderAll();
+/* ─── INITIALIZATION ─────────────────────────────────── */
+async function init() {
+  await fetchNewsData();
+  renderAll();
+  
+  // 定时检查更新
+  setInterval(checkForUpdates, CONFIG.REFRESH_INTERVAL);
+  
+  // 页面可见时检查
+  document.addEventListener('visibilitychange', () => {
+    if (!document.hidden) checkForUpdates();
+  });
+}
+
+init();
 </script>
 </body>
 </html>
