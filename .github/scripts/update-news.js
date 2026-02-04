@@ -416,6 +416,18 @@ async function main() {
   // Reddit 源
   promises.push(fetchReddit('MachineLearning'));
   promises.push(fetchReddit('artificial'));
+  promises.push(fetchReddit('ai'));
+  promises.push(fetchReddit('artificial intelligence'));
+  promises.push(fetchReddit('llm'));
+  promises.push(fetchReddit('gpt'));
+  promises.push(fetchReddit('chatgpt'));
+  promises.push(fetchReddit('claude'));
+  promises.push(fetchReddit('neural'));
+  promises.push(fetchReddit('openai'));
+  promises.push(fetchReddit('anthropic'));
+  promises.push(fetchReddit('model'));
+  promises.push(fetchReddit('transformer'));
+  
   
   // GitHub
   promises.push(fetchGitHubTrending());
