@@ -1,13 +1,14 @@
 {
   "meta": {
-    "lastUpdated": "2026-02-05T16:04:26.839Z",
+    "lastUpdated": "2026-02-05T16:14:21.193Z",
     "total": 25,
     "isFallback": false,
     "sources": [
       "GitHub",
       "Hacker News",
       "TechCrunch",
-      "MIT Tech Review"
+      "MIT Tech Review",
+      "ArXiv cs.LG"
     ],
     "date": "2026-02-05"
   },
@@ -186,7 +187,7 @@
       "url": "https://www.technologyreview.com/2026/02/05/1132200/consolidating-systems-for-ai-with-ipaas/",
       "tags": [],
       "lang": "en",
-      "score": 15
+      "score": 14
     },
     {
       "id": 14,
@@ -286,7 +287,7 @@
         "编程"
       ],
       "lang": "en",
-      "score": 8
+      "score": 7
     },
     {
       "id": 21,
@@ -344,13 +345,16 @@
     },
     {
       "id": 25,
-      "cat": "industry",
-      "title": "ElevenLabs raises $500M from Sequoia at an $11 billion valuation",
-      "summary": "ElevenLabs' valuation has raised more than three times in the last 12 months.",
-      "source": "TechCrunch",
+      "cat": "research",
+      "title": "ArXiv: Reinforced Attention Learning",
+      "summary": "Post-training with Reinforcement Learning (RL) has substantially improved reasoning in Large Language Models (LLMs) via test-time scaling. However, extending this paradigm to Multimodal LLMs (MLLMs) t",
+      "source": "ArXiv cs.LG",
       "date": "2026-02-05",
-      "url": "https://techcrunch.com/2026/02/04/elevenlabs-raises-500m-from-sequioia-at-a-11-billion-valuation/",
-      "tags": [],
+      "url": "http://arxiv.org/abs/2602.04883v1",
+      "tags": [
+        "多模态",
+        "论文"
+      ],
       "lang": "en",
       "score": 4
     }
