@@ -307,7 +307,8 @@ function fetchJSON(url, headers = {}) {
 
 function fetchXML(url, headers = {}) {
   return new Promise((resolve, reject) => {
-    https.get(url, { headers, timeout: 20000 }, (res) => {
+    const client = url.startsWith('https:') ? https : http;
+    client.get(url, { headers, timeout: 20000 }, (res) => {
       let data = '';
       res.on('data', chunk => data += chunk);
       res.on('end', () => resolve(data));
@@ -502,6 +503,12 @@ async function fetchDevTo() {
     // Dev.to API - 获取 AI 相关文章
     const url = 'https://dev.to/api/articles?tag=ai&per_page=10';
     const data = await fetchJSON(url);
+
+    // 修复：检查返回格式
+    if (!Array.isArray(data)) {
+      console.warn(`  ⚠️ Dev.to 返回格式错误: ${typeof data}`);
+      return [];
+    }
     
     const items = data.map(article => ({
       title: article.title,
@@ -527,7 +534,7 @@ async function fetchArXiv(category) {
     console.log(`📡 抓取 ArXiv ${category}...`);
     
     // ArXiv API - 获取最新论文
-    const url = `http://export.arxiv.org/api/query?search_query=cat:${category}&sortBy=submittedDate&sortOrder=descending&max_results=10`;
+    const url = `https://export.arxiv.org/api/query?search_query=cat:${category}&sortBy=submittedDate&sortOrder=descending&max_results=10`;
     const xml = await fetchXML(url);
     
     const items = [];
