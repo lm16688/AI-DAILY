@@ -12,14 +12,11 @@ permissions:
 jobs:
   update:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
     
     steps:
     - name: Checkout
       uses: actions/checkout@v4
-      with:
-        fetch-depth: 0  # 获取完整历史，避免冲突
-        
+      
     - name: Setup Node.js
       uses: actions/setup-node@v4
       with:
@@ -33,19 +30,7 @@ jobs:
         git config --local user.email "github-actions[bot]@users.noreply.github.com"
         git config --local user.name "github-actions[bot]"
         git add data/
-        
-        # 检查是否有变更
-        if git diff --staged --quiet; then
-          echo "No changes to commit"
-          exit 0
-        fi
-        
-        git commit -m "🤖 Auto-update: $(date +'%Y-%m-%d') [$(cat data/news.json | grep -o '"total": [0-9]*' | head -1 | cut -d' ' -f2) news]"
-        
-        # 先拉取远程更改，避免冲突
-        git pull --rebase origin main
-        
-        # 推送
+        git diff --staged --quiet || git commit -m "🤖 Auto-update: $(date +'%Y-%m-%d')"
         git push
       
     - name: Deploy to Pages
@@ -53,4 +38,3 @@ jobs:
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: ./
-        keep_files: true
