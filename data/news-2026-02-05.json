@@ -1,47 +1,237 @@
 {
   "meta": {
-    "lastUpdated": "2026-02-05T04:06:06.980Z",
-    "total": 18,
+    "lastUpdated": "2026-02-05T16:04:26.839Z",
+    "total": 25,
     "isFallback": false,
     "sources": [
+      "GitHub",
       "Hacker News",
-      "GitHub"
+      "TechCrunch",
+      "MIT Tech Review"
     ],
     "date": "2026-02-05"
   },
   "news": [
     {
       "id": 1,
-      "cat": "news",
+      "cat": "tools",
       "hot": true,
-      "title": "Claude is a space to think",
-      "summary": "Hacker News 热门讨论",
-      "source": "Hacker News",
+      "title": "AI-Expert-Roadmap: Roadmap to becoming an Artificial Intelligence Expert in 2022",
+      "summary": "⭐ 30,728 stars | JavaScript | Roadmap to becoming an Artificial Intelligence Expert in 2022",
+      "source": "GitHub",
       "date": "2026-02-05",
-      "url": "https://www.anthropic.com/news/claude-is-a-space-to-think",
-      "tags": [
-        "Claude"
-      ],
-      "lang": "en"
+      "url": "https://github.com/AMAI-GmbH/AI-Expert-Roadmap",
+      "tags": [],
+      "lang": "en",
+      "score": 20
     },
     {
       "id": 2,
+      "cat": "tools",
+      "hot": true,
+      "title": "Jobs_Applier_AI_Agent_AIHawk: AIHawk aims to easy job hunt process by automating the job application process. Utilizing artificial intelligence, it enables users to apply for multiple jobs in a tailor",
+      "summary": "⭐ 29,325 stars | Python | AIHawk aims to easy job hunt process by automating the job application process. Utilizing artificial intelligence, it enables users to apply for multiple jobs in a tailored w",
+      "source": "GitHub",
+      "date": "2026-02-05",
+      "url": "https://github.com/feder-cr/Jobs_Applier_AI_Agent_AIHawk",
+      "tags": [],
+      "lang": "en",
+      "score": 20
+    },
+    {
+      "id": 3,
+      "cat": "tools",
+      "hot": true,
+      "title": "awesome-artificial-intelligence: A curated list of Artificial Intelligence (AI) courses, books, video lectures and papers.",
+      "summary": "⭐ 12,927 stars | Multi | A curated list of Artificial Intelligence (AI) courses, books, video lectures and papers.",
+      "source": "GitHub",
+      "date": "2026-02-05",
+      "url": "https://github.com/owainlewis/awesome-artificial-intelligence",
+      "tags": [
+        "视频生成",
+        "论文"
+      ],
+      "lang": "en",
+      "score": 20
+    },
+    {
+      "id": 4,
+      "cat": "tools",
+      "hot": true,
+      "title": "Ai-Learn: 人工智能学习路线图，整理近200个实战案例与项目，免费提供配套教材，零基础入门，就业实战！包括：Python，数学，机器学习，数据分析，深度学习，计算机视觉，自然语言处理，PyTorch tensorflow machine-learning,deep-learning data-analysis data-mining mathematics data-science art",
+      "summary": "⭐ 12,598 stars | Multi | 人工智能学习路线图，整理近200个实战案例与项目，免费提供配套教材，零基础入门，就业实战！包括：Python，数学，机器学习，数据分析，深度学习，计算机视觉，自然语言处理，PyTorch tensorflow machine-learning,deep-learning data-analysis data-mining mathematics d",
+      "source": "GitHub",
+      "date": "2026-02-05",
+      "url": "https://github.com/tangyudi/Ai-Learn",
+      "tags": [],
+      "lang": "en",
+      "score": 20
+    },
+    {
+      "id": 5,
+      "cat": "tools",
+      "hot": true,
+      "title": "awesome-generative-ai: A curated list of modern Generative Artificial Intelligence projects and services",
+      "summary": "⭐ 11,400 stars | Multi | A curated list of modern Generative Artificial Intelligence projects and services",
+      "source": "GitHub",
+      "date": "2026-02-05",
+      "url": "https://github.com/steven2358/awesome-generative-ai",
+      "tags": [],
+      "lang": "en",
+      "score": 20
+    },
+    {
+      "id": 6,
+      "cat": "tools",
+      "hot": true,
+      "title": "tensorflow: An Open Source Machine Learning Framework for Everyone",
+      "summary": "⭐ 193,619 stars | C++ | An Open Source Machine Learning Framework for Everyone",
+      "source": "GitHub",
+      "date": "2026-02-05",
+      "url": "https://github.com/tensorflow/tensorflow",
+      "tags": [
+        "开源"
+      ],
+      "lang": "en",
+      "score": 20
+    },
+    {
+      "id": 7,
+      "cat": "tools",
+      "hot": true,
+      "title": "transformers: 🤗 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal models, for both inference and training.",
+      "summary": "⭐ 156,171 stars | Python | 🤗 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal models, for both inference and training.",
+      "source": "GitHub",
+      "date": "2026-02-05",
+      "url": "https://github.com/huggingface/transformers",
+      "tags": [
+        "多模态"
+      ],
+      "lang": "en",
+      "score": 20
+    },
+    {
+      "id": 8,
+      "cat": "tools",
+      "hot": true,
+      "title": "ML-For-Beginners: 12 weeks, 26 lessons, 52 quizzes, classic Machine Learning for all",
+      "summary": "⭐ 83,530 stars | Jupyter Notebook | 12 weeks, 26 lessons, 52 quizzes, classic Machine Learning for all",
+      "source": "GitHub",
+      "date": "2026-02-05",
+      "url": "https://github.com/microsoft/ML-For-Beginners",
+      "tags": [],
+      "lang": "en",
+      "score": 20
+    },
+    {
+      "id": 9,
+      "cat": "news",
+      "hot": false,
+      "title": "OpenAI Frontier",
+      "summary": "Hacker News 热门 AI 讨论",
+      "source": "Hacker News",
+      "date": "2026-02-05",
+      "url": "https://openai.com/index/introducing-openai-frontier/",
+      "tags": [
+        "OpenAI"
+      ],
+      "lang": "en",
+      "score": 18
+    },
+    {
+      "id": 10,
+      "cat": "news",
+      "hot": false,
+      "title": "Top downloaded skill in ClawHub contains malware",
+      "summary": "Hacker News 热门 AI 讨论",
+      "source": "Hacker News",
+      "date": "2026-02-05",
+      "url": "https://1password.com/blog/from-magic-to-malware-how-openclaws-agent-skills-become-an-attack-surface",
+      "tags": [],
+      "lang": "en",
+      "score": 16
+    },
+    {
+      "id": 11,
+      "cat": "industry",
+      "title": "Fundamental raises $255 million Series A with a new take on big data analysis",
+      "summary": "Fundamental has built a new foundation model to solve an old problem: how to draw insights from the huge quantities of structured data produced by enterprises.",
+      "source": "TechCrunch",
+      "date": "2026-02-05",
+      "url": "https://techcrunch.com/2026/02/05/fundamental-raises-255-million-series-a-with-a-new-take-on-big-data-analysis/",
+      "tags": [],
+      "lang": "en",
+      "score": 15
+    },
+    {
+      "id": 12,
+      "cat": "news",
+      "hot": false,
+      "title": "Freshpaint (YC S19) Is Hiring a Senior SWE, Data",
+      "summary": "Hacker News 热门 AI 讨论",
+      "source": "Hacker News",
+      "date": "2026-02-05",
+      "url": "https://www.freshpaint.io/about?ashby_jid=3a7926ba-cf51-4084-9196-4361a7e97761",
+      "tags": [],
+      "lang": "en",
+      "score": 15
+    },
+    {
+      "id": 13,
+      "cat": "news",
+      "title": "Consolidating systems for AI with iPaaS",
+      "summary": "For decades, enterprises reacted to shifting business pressures with stopgap technology solutions. To rein in rising infrastructure costs, they adopted cloud services that could scale on demand. When",
+      "source": "MIT Tech Review",
+      "date": "2026-02-05",
+      "url": "https://www.technologyreview.com/2026/02/05/1132200/consolidating-systems-for-ai-with-ipaas/",
+      "tags": [],
+      "lang": "en",
+      "score": 15
+    },
+    {
+      "id": 14,
+      "cat": "news",
+      "hot": false,
+      "title": "BMW's Newest \"Innovation\" Is a Logo-Shaped Middle Finger to Right to Repair",
+      "summary": "Hacker News 热门 AI 讨论",
+      "source": "Hacker News",
+      "date": "2026-02-05",
+      "url": "https://www.ifixit.com/News/115528/bmws-newest-innovation-is-a-logo-shaped-middle-finger-to-right-to-repair",
+      "tags": [],
+      "lang": "en",
+      "score": 13
+    },
+    {
+      "id": 15,
+      "cat": "news",
+      "title": "Three questions about next-generation nuclear power, answered",
+      "summary": "Nuclear power continues to be one of the hottest topics in energy today, and in our recent online Roundtables discussion about next-generation nuclear power, hyperscale AI data centers, and the grid,",
+      "source": "MIT Tech Review",
+      "date": "2026-02-05",
+      "url": "https://www.technologyreview.com/2026/02/05/1132197/nuclear-questions/",
+      "tags": [],
+      "lang": "en",
+      "score": 13
+    },
+    {
+      "id": 16,
       "cat": "news",
       "hot": true,
       "title": "AI is killing B2B SaaS",
-      "summary": "Hacker News 热门讨论",
+      "summary": "Hacker News 热门 AI 讨论",
       "source": "Hacker News",
       "date": "2026-02-05",
       "url": "https://nmn.gl/blog/ai-killing-b2b-saas",
       "tags": [],
-      "lang": "en"
+      "lang": "en",
+      "score": 10
     },
     {
-      "id": 3,
+      "id": 17,
       "cat": "news",
       "hot": true,
       "title": "Claude Code for Infrastructure",
-      "summary": "Hacker News 热门讨论",
+      "summary": "Hacker News 热门 AI 讨论",
       "source": "Hacker News",
       "date": "2026-02-05",
       "url": "https://www.fluid.sh/",
@@ -49,187 +239,15 @@
         "Claude",
         "编程"
       ],
-      "lang": "en"
-    },
-    {
-      "id": 4,
-      "cat": "news",
-      "hot": false,
-      "title": "A real-world benchmark for AI code review",
-      "summary": "Hacker News 热门讨论",
-      "source": "Hacker News",
-      "date": "2026-02-05",
-      "url": "https://www.qodo.ai/blog/how-we-built-a-real-world-benchmark-for-ai-code-review/",
-      "tags": [
-        "编程"
-      ],
-      "lang": "en"
-    },
-    {
-      "id": 5,
-      "cat": "news",
-      "hot": false,
-      "title": "Tell HN: Another round of Zendesk email spam",
-      "summary": "Looks like there&#x27;s another round of Zendesk email spam happening. I&#x27;ve gotten hundreds over the last half-hour.",
-      "source": "Hacker News",
-      "date": "2026-02-05",
-      "url": "https://news.ycombinator.com/item?id=46890418",
-      "tags": [],
-      "lang": "en"
-    },
-    {
-      "id": 6,
-      "cat": "tools",
-      "hot": false,
-      "title": "Show HN: Morph – Videos of AI testing your PR, embedded in GitHub",
-      "summary": "I review PRs all day and I&#x27;ve basically stopped reading them. Someone opens a 2000-line PR, I scroll, see it&#x27;s mostly AI-generated React components, leave a comment, merg",
-      "source": "Hacker News",
-      "date": "2026-02-05",
-      "url": "https://morphllm.com/products/glance",
-      "tags": [
-        "编程"
-      ],
-      "lang": "en"
-    },
-    {
-      "id": 7,
-      "cat": "tools",
-      "hot": true,
-      "title": "funNLP: 中英文敏感词、语言检测、中外手机/电话归属地/运营商查询、名字推断性别、手机号抽取、身份证抽取、邮箱抽取、中日文人名库、中文缩写库、拆字词典、词汇情感值、停用词、反动词表、暴恐词表、繁简体转换、英文模拟中文发音、汪峰歌词生成器、职业名称词库、同义词库、反义词库、否定词库、汽车品牌词库、汽车零件词库、连续英文切割、各种中文词向量、公司名字大全、",
-      "summary": "⭐ 78847 stars | Python | 中英文敏感词、语言检测、中外手机/电话归属地/运营商查询、名字推断性别、手机号抽取、身份证抽取、邮箱抽取、中日文人名库、中文缩写库、拆字词典、词汇情感值、停用词、反动词表、暴恐词表、繁简体转换、英文模拟中文发音、汪峰歌词生成器、职业名称词库、同义词库、反义词库、否定词库、汽车品牌词库、汽车零件词库、连续英文切",
-      "source": "GitHub",
-      "date": "2026-02-05",
-      "url": "https://github.com/fighting41love/funNLP",
-      "tags": [
-        "Microsoft",
-        "百度",
-        "开源",
-        "编程"
-      ],
-      "lang": "en"
-    },
-    {
-      "id": 8,
-      "cat": "research",
-      "title": "netron: Visualizer for neural network, deep learning and machine learning models",
-      "summary": "⭐ 32344 stars | JavaScript | Visualizer for neural network, deep learning and machine learning models",
-      "source": "GitHub",
-      "date": "2026-02-05",
-      "url": "https://github.com/lutzroeder/netron",
-      "tags": [],
-      "lang": "en"
-    },
-    {
-      "id": 9,
-      "cat": "news",
-      "title": "500-AI-Machine-learning-Deep-learning-Computer-vision-NLP-Projects-with-code: 500 AI Machine learning Deep learning Computer vision NLP Projects with code",
-      "summary": "⭐ 31360 stars | Unknown | 500 AI Machine learning Deep learning Computer vision NLP Projects with code",
-      "source": "GitHub",
-      "date": "2026-02-05",
-      "url": "https://github.com/ashishpatel26/500-AI-Machine-learning-Deep-learning-Computer-vision-NLP-Projects-with-code",
-      "tags": [
-        "编程"
-      ],
-      "lang": "en"
-    },
-    {
-      "id": 10,
-      "cat": "news",
-      "title": "onnx: Open standard for machine learning interoperability",
-      "summary": "⭐ 20283 stars | Python | Open standard for machine learning interoperability",
-      "source": "GitHub",
-      "date": "2026-02-05",
-      "url": "https://github.com/onnx/onnx",
-      "tags": [],
-      "lang": "en"
-    },
-    {
-      "id": 11,
-      "cat": "news",
-      "title": "ML-YouTube-Courses: 📺 Discover the latest machine learning / AI courses on YouTube.",
-      "summary": "⭐ 17092 stars | Unknown | 📺 Discover the latest machine learning / AI courses on YouTube.",
-      "source": "GitHub",
-      "date": "2026-02-05",
-      "url": "https://github.com/dair-ai/ML-YouTube-Courses",
-      "tags": [],
-      "lang": "en"
-    },
-    {
-      "id": 12,
-      "cat": "news",
-      "title": "ml-engineering: Machine Learning Engineering Open Book",
-      "summary": "⭐ 16575 stars | Python | Machine Learning Engineering Open Book",
-      "source": "GitHub",
-      "date": "2026-02-05",
-      "url": "https://github.com/stas00/ml-engineering",
-      "tags": [],
-      "lang": "en"
-    },
-    {
-      "id": 13,
-      "cat": "research",
-      "title": "Ai-Learn: 人工智能学习路线图，整理近200个实战案例与项目，免费提供配套教材，零基础入门，就业实战！包括：Python，数学，机器学习，数据分析，深度学习，计算机视觉，自然语言处理，PyTorch tensorflow machine-learning,deep-learning data-analysis data-mining mathemat",
-      "summary": "⭐ 12599 stars | Unknown | 人工智能学习路线图，整理近200个实战案例与项目，免费提供配套教材，零基础入门，就业实战！包括：Python，数学，机器学习，数据分析，深度学习，计算机视觉，自然语言处理，PyTorch tensorflow machine-learning,deep-learning data-analysis data",
-      "source": "GitHub",
-      "date": "2026-02-05",
-      "url": "https://github.com/tangyudi/Ai-Learn",
-      "tags": [],
-      "lang": "en"
-    },
-    {
-      "id": 14,
-      "cat": "news",
-      "title": "cleanlab: Cleanlab's open-source library is the standard data-centric AI package for data quality and machine learning with messy, real-world data and labels.",
-      "summary": "⭐ 11297 stars | Python | Cleanlab's open-source library is the standard data-centric AI package for data quality and machine learning with messy, real-world data and labels.",
-      "source": "GitHub",
-      "date": "2026-02-05",
-      "url": "https://github.com/cleanlab/cleanlab",
-      "tags": [],
-      "lang": "en"
-    },
-    {
-      "id": 15,
-      "cat": "news",
-      "title": "mlcourse.ai: Open Machine Learning Course",
-      "summary": "⭐ 10433 stars | Python | Open Machine Learning Course",
-      "source": "GitHub",
-      "date": "2026-02-05",
-      "url": "https://github.com/Yorko/mlcourse.ai",
-      "tags": [],
-      "lang": "en"
-    },
-    {
-      "id": 16,
-      "cat": "news",
-      "title": "sktime: A unified framework for machine learning with time series",
-      "summary": "⭐ 9478 stars | Python | A unified framework for machine learning with time series",
-      "source": "GitHub",
-      "date": "2026-02-05",
-      "url": "https://github.com/sktime/sktime",
-      "tags": [],
-      "lang": "en"
-    },
-    {
-      "id": 17,
-      "cat": "news",
-      "hot": true,
-      "title": "RS-SDK: Drive RuneScape with Claude Code",
-      "summary": "Hacker News 热门讨论",
-      "source": "Hacker News",
-      "date": "2026-02-05",
-      "url": "https://github.com/MaxBittker/rs-sdk",
-      "tags": [
-        "Claude",
-        "编程"
-      ],
-      "lang": "en"
+      "lang": "en",
+      "score": 10
     },
     {
       "id": 18,
-      "cat": "research",
+      "cat": "news",
       "hot": true,
       "title": "Claude Code: connect to a local model when your quota runs out",
-      "summary": "Hacker News 热门讨论",
+      "summary": "Hacker News 热门 AI 讨论",
       "source": "Hacker News",
       "date": "2026-02-05",
       "url": "https://boxc.net/blog/2026/claude-code-connecting-to-local-models-when-your-quota-runs-out/",
@@ -237,7 +255,104 @@
         "Claude",
         "编程"
       ],
-      "lang": "en"
+      "lang": "en",
+      "score": 9
+    },
+    {
+      "id": 19,
+      "cat": "news",
+      "title": "Sam Altman got exceptionally testy over Claude Super Bowl ads",
+      "summary": "He posted a novella-sized rant that devolved into to calling his rival \"dishonest\" and \"authoritarian.\"",
+      "source": "TechCrunch",
+      "date": "2026-02-05",
+      "url": "https://techcrunch.com/2026/02/04/sam-altman-got-exceptionally-testy-over-claude-super-bowl-ads/",
+      "tags": [
+        "Claude"
+      ],
+      "lang": "en",
+      "score": 9
+    },
+    {
+      "id": 20,
+      "cat": "news",
+      "hot": false,
+      "title": "RS-SDK: Drive RuneScape with Claude Code",
+      "summary": "Hacker News 热门 AI 讨论",
+      "source": "Hacker News",
+      "date": "2026-02-05",
+      "url": "https://github.com/MaxBittker/rs-sdk",
+      "tags": [
+        "Claude",
+        "编程"
+      ],
+      "lang": "en",
+      "score": 8
+    },
+    {
+      "id": 21,
+      "cat": "tools",
+      "hot": true,
+      "title": "Google’s Gemini app has surpassed 750M monthly active users",
+      "summary": "Google revealed a significant milestone for its Gemini app, announcing over 750 million monthly active users as it competes with ChatGPT and Meta AI.",
+      "source": "TechCrunch",
+      "date": "2026-02-05",
+      "url": "https://techcrunch.com/2026/02/04/googles-gemini-app-has-surpassed-750m-monthly-active-users/",
+      "tags": [
+        "ChatGPT",
+        "Google",
+        "Gemini",
+        "Meta"
+      ],
+      "lang": "en",
+      "score": 7
+    },
+    {
+      "id": 22,
+      "cat": "industry",
+      "title": "AI SRE Resolve AI confirms $125M raise, unicorn valuation",
+      "summary": "The two-year-old startup confirms that it closed a Series A led by Lightspeed at $1 billion valuation.",
+      "source": "TechCrunch",
+      "date": "2026-02-05",
+      "url": "https://techcrunch.com/2026/02/04/ai-sre-resolve-ai-confirms-125m-raise-unicorn-valuation/",
+      "tags": [],
+      "lang": "en",
+      "score": 7
+    },
+    {
+      "id": 23,
+      "cat": "industry",
+      "title": "A16z just raised $1.7B for AI infrastructure. Here&#8217;s where it&#8217;s going.",
+      "summary": "Andreessen Horowitz just raised&#160;a whopping&#160;⁠new&#160;$15 billion&#160;in funding⁠.&#160;And a&#160;$1.7 billion&#160;chunk&#160;of that is going to&#160;its&#160;⁠infrastructure&#160;team⁠,&",
+      "source": "TechCrunch",
+      "date": "2026-02-05",
+      "url": "https://techcrunch.com/video/a16z-just-raised-1-7b-for-ai-infrastructure-heres-where-its-going/",
+      "tags": [],
+      "lang": "en",
+      "score": 6
+    },
+    {
+      "id": 24,
+      "cat": "tools",
+      "title": "Tinder looks to AI to help fight &#8216;swipe fatigue&#8217; and dating app burnout",
+      "summary": "Tinder is testing AI recommendations and insight from your Camera Roll for better matches.",
+      "source": "TechCrunch",
+      "date": "2026-02-05",
+      "url": "https://techcrunch.com/2026/02/04/tinder-looks-to-ai-to-help-fight-swipe-fatigue-and-dating-app-burnout/",
+      "tags": [],
+      "lang": "en",
+      "score": 4
+    },
+    {
+      "id": 25,
+      "cat": "industry",
+      "title": "ElevenLabs raises $500M from Sequoia at an $11 billion valuation",
+      "summary": "ElevenLabs' valuation has raised more than three times in the last 12 months.",
+      "source": "TechCrunch",
+      "date": "2026-02-05",
+      "url": "https://techcrunch.com/2026/02/04/elevenlabs-raises-500m-from-sequioia-at-a-11-billion-valuation/",
+      "tags": [],
+      "lang": "en",
+      "score": 4
     }
   ]
 }
