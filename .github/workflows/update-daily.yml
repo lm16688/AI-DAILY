@@ -12,6 +12,7 @@ permissions:
 jobs:
   update:
     runs-on: ubuntu-latest
+    timeout-minutes: 15  # 增加超时时间（数据源多）
     
     steps:
     - name: Checkout
@@ -30,7 +31,7 @@ jobs:
         git config --local user.email "github-actions[bot]@users.noreply.github.com"
         git config --local user.name "github-actions[bot]"
         git add data/
-        git diff --staged --quiet || git commit -m "🤖 Auto-update: $(date +'%Y-%m-%d')"
+        git diff --staged --quiet || git commit -m "🤖 Auto-update: $(date +'%Y-%m-%d') [$(cat data/news.json | grep -o '"total": [0-9]*' | head -1 | cut -d' ' -f2) news]"
         git push
       
     - name: Deploy to Pages
