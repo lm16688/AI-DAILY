@@ -1,0 +1,41 @@
+name: Update AI Daily News
+
+on:
+  schedule:
+    - cron: '0 2 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15  # 增加超时时间（数据源多）
+    
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v4
+      
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '20'
+        
+    - name: Fetch news
+      run: node .github/scripts/update-news.js
+      
+    - name: Commit and push
+      run: |
+        git config --local user.email "github-actions[bot]@users.noreply.github.com"
+        git config --local user.name "github-actions[bot]"
+        git add data/
+        git diff --staged --quiet || git commit -m "🤖 Auto-update: $(date +'%Y-%m-%d') [$(cat data/news.json | grep -o '"total": [0-9]*' | head -1 | cut -d' ' -f2) news]"
+        git push
+      
+    - name: Deploy to Pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./
